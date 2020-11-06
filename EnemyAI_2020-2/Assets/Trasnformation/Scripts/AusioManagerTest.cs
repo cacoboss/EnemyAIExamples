@@ -30,8 +30,10 @@ public class AusioManagerTest : MonoBehaviour
             AusioManager.p_Instance.PlayMusicWithCrossfade(music1, 3f);
         
         if(Input.GetAxisRaw("Horizontal") == 1 && Input.GetButton("Jump"))
-            AusioManager.p_Instance.PlayMusicWithCrossfade(music2, 1.5f);
+            AusioManager.p_Instance.PlayMusicWithCrossfade(music2, 3f);
         
+        if(Input.GetAxisRaw("Vertical") == -1 && Input.GetButton("Jump"))
+            AusioManager.p_Instance.StopMusic();
         //Debug.Log("GetAxisRaw: " + Input.GetAxisRaw("Horizontal"));
         //Debug.Log("GetAxis: " + Input.GetAxis("Horizontal"));
     }

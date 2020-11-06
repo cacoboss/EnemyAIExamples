@@ -48,6 +48,8 @@ public class AusioManager : MonoBehaviour
 
         _musicSource_01.loop = true;
         _musicSource_02.loop = true;
+
+        _firstMusicSourceIsPlaying = true;
     }
 
     public void PlayMusic(AudioClip musicClip)
@@ -121,5 +123,10 @@ public class AusioManager : MonoBehaviour
     {
         _sfxSource.PlayOneShot(clip, volume);
     }
-    
+
+    public void StopMusic()
+    {
+        _musicSource_01.Stop();
+        _musicSource_02.Stop();
+    }
 }

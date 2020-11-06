@@ -1017,9 +1017,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34c4c040156167c43a7a9013e4d36112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sfx: {fileID: 8300000, guid: 396181f0abb87e04b86a24dc4689bd40, type: 3}
-  music1: {fileID: 8300000, guid: a72557984e66d3b42b2645d7666cd572, type: 3}
-  music2: {fileID: 8300000, guid: e853b0a2c61c17741b7c7db593a37bf3, type: 3}
+  sfx: {fileID: 8300000, guid: 9b6375c63664e3d4fa102bfd9338fc12, type: 3}
+  music1: {fileID: 8300000, guid: ca666a7015524654080613b86ee2aced, type: 3}
+  music2: {fileID: 8300000, guid: 51587bfea1159c0469b5d4ea78aa7a10, type: 3}
 --- !u!1 &1197291992
 GameObject:
   m_ObjectHideFlags: 0
@@ -1322,6 +1322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: -2, y: 0}
   ms: 1
+  sfx: {fileID: 0}
 --- !u!1 &1691677014
 GameObject:
   m_ObjectHideFlags: 0
@@ -1520,6 +1521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: -2, y: 0}
   ms: 2
+  sfx: {fileID: 0}
 --- !u!58 &2015466076
 CircleCollider2D:
   m_ObjectHideFlags: 0

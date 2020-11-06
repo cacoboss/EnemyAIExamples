@@ -11,7 +11,8 @@ public class MushroomMovement : MonoBehaviour
     public Vector2 direction;
 
     public Transitions.MarioState ms;
-    
+
+    public AudioClip sfx;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +42,7 @@ public class MushroomMovement : MonoBehaviour
         else if (obj_f.CompareTag("Player"))
         {
             obj_f.GetComponentInChildren<Transitions>().ChangeState(ms);
+            AusioManager.p_Instance.PlaySFX(sfx);
             Destroy(this.gameObject);
         }
     }
