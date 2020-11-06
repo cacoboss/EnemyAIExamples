@@ -8,6 +8,8 @@ TagManager:
   - Uphill
   - Uphill-T
   - Enemy
+  - Ground
+  - PU-Mushroom
   layers:
   - Default
   - TransparentFX
