@@ -21,7 +21,7 @@ public class AusioManagerTest : MonoBehaviour
             AusioManager.p_Instance.PlayMusic(music2);
         
         if(Input.GetAxisRaw("Vertical") == -1 && !Input.GetButton("Jump"))
-            AusioManager.p_Instance.PlayMusicWithFade(music1);
+            AusioManager.p_Instance.PlayMusicWithFade(music1, 3f);
         
         if(Input.GetAxisRaw("Vertical") == 1 && !Input.GetButton("Jump"))
             AusioManager.p_Instance.PlayMusicWithFade(music2);

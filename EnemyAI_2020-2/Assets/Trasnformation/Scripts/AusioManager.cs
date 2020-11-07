@@ -35,7 +35,7 @@ public class AusioManager : MonoBehaviour
     private AudioSource _musicSource_02;
     private AudioSource _sfxSource;
 
-    private bool _firstMusicSourceIsPlaying;
+    [SerializeField] private bool _firstMusicSourceIsPlaying;
     #endregion
     
     private void Awake()
@@ -48,6 +48,7 @@ public class AusioManager : MonoBehaviour
 
         _musicSource_01.loop = true;
         _musicSource_02.loop = true;
+        
 
         _firstMusicSourceIsPlaying = true;
     }
