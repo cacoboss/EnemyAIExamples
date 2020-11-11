@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   degree: -40
-  velocity: 6
+  velocity: 10
   _rb: {fileID: 4305343434982614329}
   direction: {x: 0, y: 0}
   lifeTime: 2

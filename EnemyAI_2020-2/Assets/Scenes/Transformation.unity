@@ -907,6 +907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 358bb8c95fcc7b8429ef777d966501e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _firstMusicSourceIsPlaying: 0
 --- !u!4 &570095617
 Transform:
   m_ObjectHideFlags: 0
@@ -1322,7 +1323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: -2, y: 0}
   ms: 1
-  sfx: {fileID: 0}
+  sfx: {fileID: 8300000, guid: 9b6375c63664e3d4fa102bfd9338fc12, type: 3}
 --- !u!1 &1691677014
 GameObject:
   m_ObjectHideFlags: 0
@@ -1521,7 +1522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: -2, y: 0}
   ms: 2
-  sfx: {fileID: 0}
+  sfx: {fileID: 8300000, guid: a225459d3550a2b4986c7230ae24dd3e, type: 3}
 --- !u!58 &2015466076
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -55,14 +55,15 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log(other.gameObject.name);
+
         GameObject obj = other.transform.root.gameObject;
         switch (_damageType)
         {
             case DamageType.ToEnemy:
                 if (other.gameObject.CompareTag("Enemy"))
                 {
-                    Destroy(obj);
+                    //Destroy(obj);
+                    obj.SetActive(false);
                     Destroy(gameObject);
                 }
                 break;

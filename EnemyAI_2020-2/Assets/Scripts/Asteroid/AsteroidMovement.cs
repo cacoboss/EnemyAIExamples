@@ -45,4 +45,9 @@ public class AsteroidMovement : MonoBehaviour
     {
         transform.Rotate(0f,0f,_rotationSpeed * Time.deltaTime);
     }
+
+    private void OnDisable()
+    {
+        FindObjectOfType<AsteroidPooler>().ReturnAsteroidInstanceToPool(gameObject);
+    }
 }
