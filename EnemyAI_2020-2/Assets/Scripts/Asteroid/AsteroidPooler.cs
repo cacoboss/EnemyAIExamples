@@ -21,7 +21,6 @@ public class AsteroidPooler : MonoBehaviour
         //poolSize = 5;
         _asteroidPool = new Queue<GameObject>();
         _asteroidPool.Clear();
-        Debug.Log(_asteroidPool.Count);
         
         for (int i = 0; i < poolSize; i++)
         {
@@ -30,7 +29,7 @@ public class AsteroidPooler : MonoBehaviour
             obj.SetActive(false);
             _flag = false;
         }
-        Debug.Log(_asteroidPool.Count);
+
     }
     
     #endregion
@@ -39,7 +38,6 @@ public class AsteroidPooler : MonoBehaviour
     {
         if (_asteroidPool.Count > 0)
         {
-            Debug.Log(_asteroidPool.Count);
             GameObject obj = _asteroidPool.Dequeue();
             obj.SetActive(true);
             _flag = true;
