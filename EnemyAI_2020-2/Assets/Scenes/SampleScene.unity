@@ -1184,7 +1184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _asteroidPrefab: {fileID: 2006766104313184718, guid: c03081d53bf35a54dbbf407056d6f1ce, type: 3}
-  poolSize: 10
+  poolSize: 2
   _flag: 0
 --- !u!4 &1622187222
 Transform:

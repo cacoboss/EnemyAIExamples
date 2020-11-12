@@ -28,10 +28,10 @@ public class BackgroundParallax : MonoBehaviour
     
     void LateUpdate()
     {
+        float difference = _cameraPosition.position.x - _lastScreenPosition.x;
         foreach (GameObject obj in parallaxObjects)
         {
             RepositionChild(obj);
-            float difference = _cameraPosition.position.x - _lastScreenPosition.x;
             Vector3 v = MovementTranslation(obj, difference);
             obj.transform.Translate(v);
         }
@@ -51,6 +51,9 @@ public class BackgroundParallax : MonoBehaviour
             case 1:
                 v *= _scriptableBackground.scrollingSpeed[1];
                 break;
+            case 2:
+                v *= _scriptableBackground.scrollingSpeed[2];
+                break;
         }
         return v;
     }
@@ -63,7 +66,7 @@ public class BackgroundParallax : MonoBehaviour
             
             //Number of childs
             //float numOfObjects = Mathf.CeilToInt(spriteWidth / _screenSize.x) + 1;
-            float numOfObjects = Mathf.CeilToInt((_screenSize.x * 2) / spriteWidth); 
+            int numOfObjects = Mathf.CeilToInt((_screenSize.x * 2) / spriteWidth); 
             
             //Mold for the childs
             GameObject clone = Instantiate(obj);
